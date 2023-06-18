@@ -1,0 +1,189 @@
+/* h3 */
+@media screen and (min-width: 768px) {
+  .paragraph-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+  }
+
+  .container {
+    max-width: 1158px;
+  }
+
+  /* ----- hero -----*/
+  .hero-container {
+    max-width: 1158px;
+    margin: auto auto;
+    margin-bottom: 96px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
+
+/* hero background tablet */
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+  screen and (min-resolution: 96dpi) and (min-width: 768px),
+  screen and (min-resolution: 1dppx) and (min-width: 768px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desc.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* hero title tablet */
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ----- section 1 - feature ----- */
+  .container-feature {
+    max-width: 768px;
+    margin-bottom: 102px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .feature-item-title {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  .feature-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  /* ----- section 2 - What are we doing ----- */
+
+  /* ----- section 3 - Our Team -----*/
+  .container-team {
+    max-width: 552px;
+  }
+
+  .team-list {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 40px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  /* ----- section 4 - customers -----*/
+  .container-customers {
+    max-width: 552px;
+  }
+
+  .customer-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+    margin-bottom: 72px;
+  }
+
+  .customer-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  /* ----- footer -----*/
+  .footer-container {
+    max-width: 552px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo-text {
+    max-width: 264px;
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-soc-media {
+    max-width: 208px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 104px;
+  }
+
+  .footer-soc-title {
+    text-align: left;
+  }
+
+  .footer-subscribe {
+    max-width: 453px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 96px;
+  }
+
+  .footer-subscribe-text {
+    text-align: left;
+  }
+
+  .footer-subscribe-form {
+    max-width: 453px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .footer-subscribe-email {
+    width: 264px;
+    margin-right: 24px;
+  }
+}

@@ -1,0 +1,181 @@
+/* p */
+@media screen and (min-width: 1158px) {
+  .paragraph-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+
+  .container {
+    width: 1158px;
+  }
+
+  /* ----- hero -----*/
+  .hero-container {
+    margin: auto auto;
+    margin-bottom: 120px;
+    max-width: 1158px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+
+/* hero background desktop */
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 1158px),
+  screen and (min-resolution: 96dpi) and (min-width: 1158px),
+  screen and (min-resolution: 1dppx) and (min-width: 1158px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desc.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desc@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* hero title desktop */
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ----- section 1 - feature ----- */
+  .container-feature {
+    max-width: 1128px;
+    margin-bottom: 120px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .feature-item-title {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .feature-item {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  }
+
+  .feature-item-rec {
+    background: var(--color-light);
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-item-title {
+    margin-bottom: 8px;
+  }
+
+  /* ----- section 2 - What are we doing ----- */
+
+  .container-doing {
+    display: block;
+    margin-bottom: 120px;
+  }
+
+  .doing-title {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .doing-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .doing-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* ----- section 3 - Our Team -----*/
+  .team {
+    margin-bottom: 120px;
+    background-color: var(--color-light);
+  }
+
+  .container-team {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 120px 0px;
+  }
+
+  .team-title {
+    padding-left: 26px;
+  }
+
+  .team-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  /* ----- section 4 - customers -----*/
+  .container-customers {
+    max-width: 1128px;
+    margin-bottom: 120px;
+  }
+
+  .customer-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+    margin-bottom: 0;
+  }
+
+  /* ----- footer -----*/
+  .footer-container {
+    max-width: 1128px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: baseline;
+  }
+
+  .footer-logo-text {
+    margin: 0;
+    margin-right: 120px;
+  }
+
+  .footer-soc-media {
+    margin-bottom: 132px;
+    margin-right: 80px;
+  }
+}
