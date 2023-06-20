@@ -24,7 +24,106 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
+      <!-- header mobile -->
+      <div class="header-container-mob">
+        <!-- logo -->
+        <a class="header-logo link" href="./index.html">
+          Web<span class="header-logo-right">Studio</span>
+        </a>
+
+        <!-- mobile menu - burger -->
+        <button
+          class="header-mob-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-mob-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <!-- mobile menu window -->
+        <div class="mob-menu-window js-menu-container" id="mobile-menu">
+          <!-- mobile menu window - close button-->
+          <div class="mobile-btn-close-container">
+            <button type="button" class="mob-btn-close js-close-menu">
+              <svg class="mob-btn-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- mobile menu window - menu -->
+          <div class="mob-menu">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <!-- mobile menu window - contacts, soc -->
+            <div class="mob-menu-cont-soc">
+              <ul class="mob-menu-cont-soc-list list">
+                <li class="mob-menu-tel">
+                  <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-email">
+                  <a
+                    class="mob-menu-email-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-menu-soc">
+                  <ul class="mob-menu-soc-list list">
+                    <li class="mob-menu-soc-item">
+                      <a href="" class="mob-menu-soc-link">
+                        <svg class="mob-menu-soc-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                      <a href="" class="mob-menu-soc-link">
+                        <svg class="mob-menu-soc-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                      <a href="" class="mob-menu-soc-link">
+                        <svg class="mob-menu-soc-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mob-menu-soc-item">
+                      <a href="" class="mob-menu-soc-link">
+                        <svg class="mob-menu-soc-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header tablet, desktop -->
       <div class="container">
         <div class="header-container">
           <nav class="nav-container">
@@ -35,15 +134,15 @@
 
             <!-- navigation -->
             <ul class="header-list list">
-              <li class="header-item-portfolio">
+              <li class="header-item-index">
                 <a class="header-link link" href="./index.html">Studio</a>
               </li>
-              <li class="header-item-portfolio">
+              <li class="header-item-index">
                 <a class="header-link link" href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
-              <li class="header-item-portfolio">
+              <li class="header-item-index">
                 <a class="header-link link" href="">Contacts</a>
               </li>
             </ul>
