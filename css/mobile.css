@@ -99,6 +99,14 @@
   margin: 0 auto;
   margin-bottom: 32px;
 }
+
+@media screen and (max-width: 427px) {
+  .mobile-btn-close-container {
+    max-width: unset;
+    width: calc(100% - 64px);
+  }
+}
+
 .mob-btn-close {
   position: absolute;
   display: flex;
@@ -143,6 +151,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 427px) {
+  .mob-menu {
+    max-width: unset;
+    width: calc(100% - 64px);
+  }
+}
+
 .mob-menu-list {
   display: flex;
   flex-direction: column;
@@ -166,6 +181,13 @@
 .mob-menu-cont-soc {
   max-width: 364px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 427px) {
+  .mob-menu-cont-soc {
+    max-width: unset;
+    width: 100%;
+  }
 }
 
 .mob-menu-cont-soc-list {
@@ -199,13 +221,15 @@
 }
 
 .mob-menu-soc {
-  min-width: 328px;
+  /* min-width: 328px; */
+  max-width: 328px;
   height: 40px;
 }
 
 .mob-menu-soc-list {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
+  /* gap: 56px; */
 }
 
 .mob-menu-soc-item {
@@ -232,12 +256,9 @@
 }
 
 /* ----- hero -----*/
-.hero-container {
+.hero {
   max-width: 768px;
   margin: auto auto;
-  margin-bottom: 96px;
-  padding-top: 112px;
-  padding-bottom: 112px;
   background: var(--color-hero-bc);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -248,11 +269,19 @@
   background-position: center;
 }
 
+.hero-container {
+  max-width: 768px;
+  margin: auto auto;
+  margin-bottom: 96px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
 /* hero background mobile */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -668,6 +697,7 @@
   width: 392px;
   min-height: 584px;
   padding: 72px 16px 24px 16px;
+  /* padding: 72px 0 24px 0; */
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -721,6 +751,19 @@
 .modal-form {
   width: 360px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 427px) {
+  .modal {
+    /* width: 284px; */
+    width: calc(100% - 36px);
+  }
+
+  .modal-form {
+    /* width: 252px; */
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
 }
 
 .modal-form-input {

@@ -123,6 +123,10 @@
   }
 
   /* ----- hero -----*/
+  .hero {
+    max-width: 1158px;
+  }
+
   .hero-container {
     max-width: 1158px;
     margin: auto auto;
@@ -136,7 +140,7 @@
 @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
   screen and (min-resolution: 96dpi) and (min-width: 768px),
   screen and (min-resolution: 1dppx) and (min-width: 768px) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -148,7 +152,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -182,6 +186,12 @@
   }
 
   .feature-item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
     text-align: left;
     margin-bottom: 8px;
   }
